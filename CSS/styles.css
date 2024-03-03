@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+/* Styles all the elements of h1 in the doc */
+body {
+    background: linear-gradient(to bottom, rgba(166, 238, 245, 1), rgba(166, 238, 245, 0));
+
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: ; */
+    /* width: 1024px; */
+}
+
+h1 {
+    color: orange;
+}
+
+/* a {
+    color: green;
+} */
+
+/* Style to be assigned to a particular element (ids are unique) */
+/* #anchor-one {
+    color: yellow;
+} */
+/* 
+#anchor-two {
+    color: green;
+} */
+
+/* Styles to be assigned to a group of html elements having common classes */
+/* .my-styles {
+    color: grey;
+} */
+
+/* Attribute Selectors --> [ ] */
+/* ^= --> Starts with */
+/* $= --> Ends with */
+/* *= --> Contains */
+
+/* img[src^="https://"] {
+    border: 10px solid red;
+}
+
+img[src^="../"] {
+    border: 5px solid blue;
+} */
+
+/* img[src$=".jpg"] {
+    border: 10px solid gray
+} */
+
+/* img[src*="sample"] {
+    border: 10px solid violet
+} */
+
+/* img[src^="sample"], img[src$="sample"] {
+
+} */
+
+/* p[id*="my-para"] {
+    color: pink;
+} */
+
+
+/* #my-heading {
+    color: green;
+} */
+
+/* PSEUDO SELECTORS - ( : ) */
+
+/* #my-heading:hover {
+    color: purple;
+}
+
+a:visited {
+    color: yellow;
+} */
+
+/* Selecting elts based on relationships */
+/* .my-items:first-child {
+    color: brown;
+}
+
+.my-items:last-child {
+    color: pink;
+}
+
+.my-items:nth-child(3) {
+    color: yellow;
+}
+
+li:last-child {
+    color: navy;
+} */
+
+
+/* CSS PROPERTIES */
+
+/* 1. Colors --> i.) named-color  ii.) HEX code (#000000 - black, #ffffff - white)  iii.) rgb()  iv.) rgba() */
+
+/* h1 {
+    color: #e60be6;
+    color: rgb(34, 245, 133)
+} */
+
+
+/* 2. Gradients --> i.) Linear   ii.) Radial  */
+
+/* #my-container { */
+    /* width: 85%;
+    height: 450px; */
+
+    /* background: url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg'); */
+    /* background: linear-gradient(direction, firstColor, secondColor); */
+    /* background: linear-gradient(45deg, black, red, yellow, green, purple, white); */
+/* } */
+
+/* #my-container-two {
+    width: 85%;
+    height: 450px;
+
+    background: radial-gradient(circle, black 20%, red 40%, yellow 60%, green 80%, purple 100%);
+} */
+
+
+/* 3. Texts & Fonts */
+
+/* h1 {
+    font-size: 28px;
+    text-align: center;
+} */
+
+
+/* Units of Measuremnets */
+
+/* #container {
+    height: 350px;
+    width: 75vw;
+}
+
+#new-container {
+    height: 350px;
+    width: 50vw
+} */
+
+
+/* BOX MODEL */
+#my-para {
+    /* 1.2em = 1.2em * 16px = 19.2px */
+    font-size: 1.2em;
+}
+
+#my-img {
+    width: 85%;
+    height: 400px;
+
+    /* NOTE --> border, margin and padding are CSS parent properties (they also have sub-properties)  */
+
+    /* 1. Border - border: widthOfBorder styleOfBorder colorOfBorder */
+    /* border: 5px solid orange; */
+    border-left: 5px solid maroon;
+
+    /* 2. padding: size; padding: top-bottom px left-right px; padding: top px right px bottom px left px; */
+    /* padding: 10px; */
+    /* padding: 5px 10px; */
+    /* padding: 5px 10px 15px 20px; */
+    padding-left: 10px;
+
+    /* 3. margin */
+    /* margin: 10px; */
+    /* margin: 10px 15px; */
+
+    margin-left: 5px;
+}
+
+#my-para {
+    border: 10px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Anchors */
+#anchor-container a {
+    text-decoration: none;
+    color: maroon;
+    text-align: center;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/* LAYOUTS --> Project Work - ( display --> parent --> used at multiple places with multiple ) */
+
+.inline-para {
+    display: inline;
+}
+
+a {
+    display: block;
+}
+
+/* inline-block */
+
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row, column, row-reverse, colomn-reverse; */
+
+    /* float: right; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-stat, flex-end, center; */
+    /* justify-content: space-between, space-around, space-evenly; */
+}
+
+.items {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+
+    /* align-items: flex-end; */
+}
+
+
+/* Positioning */
+
+#box {
+    width: 500px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+
+    position: relative;
+    /* position: static;
+    position: absolute;
+    position: relative;
+    position: fixed 
+    position: sticky */
+
+    /* position: relative; */
+    /* top: 100px; */
+}
+
+.box-items {
+    color: white;
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+}
+
+#box-one {
+    position: relative;
+    /* top: 200px; */
+    /* top: 0px;
+    left: 20px; */
+    /* bottom:;
+    right:;
+    left:; */
+}
+
+#box-two {
+    position: relative;
+    top: 10;
+    left: 0;
+}
+
+#box-three {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+}
+
+/* Float & Clear */
+
+#float-img {
+    width: 500px;
+    height: 250px;
+
+    float: right;
+}
+
+.float-box-class {
+    width: 30%;
+    height: 150px;
+}
+
+#float-one {
+    width: 60%;
+    height: 150px;
+    background-color: blue;
+    float: left;
+    margin: 15px;
+}
+
+#float-two {
+    width: 40%;
+    height: 150px;
+    background-color: red;
+    float: left;
+    margin: 15px;
+}
+
+#float-three {
+    width: 40%;
+    height: 150px;
+    background-color: green;
+    float: left;
+    margin: 15px;
+}
+
+#float-four {
+    width: 30%;
+    height: 150px;
+    background-color: yellow;
+    float: left;
+    margin: 15px;
+}
+
+#float-five {
+    width: 45%;
+    height: 150px;
+    background-color: teal;
+    float: left;
+    margin: 15px;
+}
+
+#float-six {
+    width: 50%;
+    height: 150px;
+    background-color: pink;
+    float: left;
+    margin: 15px;
+}
+
+#float-box div {
+    border: 2px dotted blue;
+}
+
+
+#float-box div p {
+    color: white;
+    text-align: center;
+}
+
+/* #submit-btn {
+    padding: 5px;
+    background-color: green;
+    color: white;
+} */
+
+/* #my-img {
+    filter: grayscale(50%);
+} */
+
+/* BOX SHADOWS */
+
+#box-shadow-div {
+    color: purple;
+    background-color: yellow;
+    border: 2px solid purple;
+    /* box-shadow: h-axis v-axis; color */
+    /* box-shadow: inset 10px 10px 20px green; */
+    box-shadow: inset -10px -10px 5px green;
+    box-shadow: -10px -10px 5px red, 10px -10px 5px blue, 10px 10px 1px green, -10px 10px 5px yellow;
+    margin: 50px;
+}
+
+#box-shadow-heading {
+    text-align: center;
+}
+
+
+/* CSS GRIDS */
+
+.grid-container {
+    background-color: white;
+    height: auto;
+    padding: 25px;
+    /* display: flex; */
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; */
+    /* grid-template-columns: repeat(3, 150px); */
+
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    /* grid-template-rows: 150px 150px 150px 150px 150px; */
+    grid-template-rows: minmax(150px);
+
+    /* grid-row-gap: 20px;
+    grid-column-gap: 20px; */
+    /* grid-gap: h-width v-width; */
+    grid-gap: 25px 25px;
+}
+
+.grid-item {
+    width: 100%;
+    height: 150x;
+    padding: 10px;
+}
+
+.grid-item:nth-child(odd) {
+    background-color: skyblue;
+}
+
+.grid-item:nth-child(even) {
+    background-color: navy;
+    color: white
+}
+
+.grid-item-1 {
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+
+    grid-column: 1 / -1;
+}
+
+.grid-item-2 {
+    /* height: 300px; */
+    grid-column: 1 / 4;
+}
+
+.grid-item-4 {
+    grid-column: 1 / 2;
+}
+
+.grid-item-5 {
+    grid-column: 2 / 5;
+}
+
+.grid-item-6 {
+    grid-column: 1 / 5;
+}
+
+.grid-item-7 {
+    grid-column: 1 / 3;
+}
+
+.grid-item-8 {
+    grid-column: 3 / 5;
+}
+
+
+/* z-index */
+#container-item-1, #container-item-2 {
+    height: 350px;
+}
+
+#container-item-1 {
+    position: relative;
+    z-index: 5;
+    background-color: green;
+}
+
+#container-item-2 {
+    position: relative;
+    bottom: 75px;
+    z-index: 10;
+    background-color: yellow;
+}
+
+/* align-items & align-slef */
+
+/* Media-Queries */
+/* Q - If you want to style document when printed --> @media print */
+
+#screen-box-1, #screen-box-2, #screen-box-3, #screen-box-4 {
+    display: none;
+}
+
+/* Mobile Phones */
+@media all and (max-width: 768px) {
+    #screen-box-1 {
+        display: block;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #screen-box-2 {
+        display: block;
+    }
+}
+
+/* Dekstop System */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #screen-box-3 {
+        display: block;
+    }
+}
+
+/* 4K Displays */
+@media only screen and (min-width: 1201px) {
+    #screen-box-4 {
+        display: block;
+    }
+}
+
+
+/* Transformations in CSS */
+#animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: orange;
+    width: 100%;
+    height: 400px;
+}
+
+#animation-box {
+    width: 400px;
+    height: 400px;
+
+    background-color: red;
+    color: white;
+
+    line-height: 25em;
+    position: relative;
+
+    /* transform: rotate(120deg) */
+
+    /* transform: rotate(360deg); */
+    /* transform: skewX(10deg); */
+    /* transform: skewY(10deg); */
+    /* transform: skew(50deg, 50deg); */
+}
+
+#animation-box:hover {
+    /* transform: scale(1.1); */
+    /* transform: matrix(1, 2, 3, 4, 5, 6); */
+    /* transform: translate(120px, 50%); */
+    /* transform: translate(120px); */
+    /* transform: translate(0, 120px); */
+
+    /* transform-origin: 20% left; */
+    /* transform: scale(1.2) ; */
+
+    /* TRANSITION */
+
+    /* Duration -> from the time you hovered, how much time will it take to complete the transformation */
+    /* transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    /* Delay -> from the time you hovered, how much time will it take to start the transition */
+    /* transition-delay: 2s; */
+
+    /* transition: duration function delay; */
+    /* transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s; */
+
+    /* animation-name: my-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+    /* animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    /* animation-timing-function: ease;
+    animation-direction: reverse; */
+    /* animation-delay: ; */
+    /* animation-name: my-animation; */
+
+    animation: my-animation 5s infinite ease .5s;
+}
+
+@keyframes my-animation {
+    0% {
+        /* transform: rotate(0); */
+        /* transform: translate(0); */
+        background-color: red;
+        left: 100px;
+    }
+    50% {
+        /* transform: translate(120px); */
+        background-color: blue;
+        top: 100px;
+    }
+    75% {
+        background-color: black;
+        /* transform: skew(20px, 20px); */
+        right: 100px
+    }
+    100% {
+        transform: translate(0);
+        /* background-color: pink; */
+        bottom: 100px;
+    }
+}
+
+#my-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 400px;
+
+    /* background-color: black; */
+    color: white;
+}
+
+#my-sec-div {
+    border: 5px solid red;
+    padding: 20px;
+    margin: 20px;
+}
+
+#my-sec::before {
+    content: "This is a BEFORE Content of the Section";
+}
+
+/* Content written in before pseudo class will be rendered when the div starts to render for the first time */
+#my-sec-div::before {
+    /* content: "This is a BEFORE Content!"; */
+    content: "";
+    position: absolute;
+    padding: 5px;
+
+    width: 93%;
+    height: 157px;
+
+    background: url('https://wallpaperaccess.com/full/170249.jpg');
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#my-sec-div::after {
+    content: "This is a AFTER Content!";
+}
+
+/* #my-sec::after {
+    content: "This is a AFTER Content!";
+} */
+
+#my-sec-p {
+    text-align: center;
+}
+
+/* CSS Combinators -> Advanced CSS Selectors -> 3 Combinarors */
+
+/* 1. All the specified element children */
+/* #my-div-2 p {
+    background-color: green;
+    color: yellow;
+    text-align: center;
+} */
+
+/* 2. All the immideate specified element children */
+#my-div-2 > p {
+    background-color: green;
+    color: yellow;
+    text-align: center;
+}
+
+/* 3. All the immideate specified SIBLING */
+/* #my-div-2 + p {
+    background-color: green;
+    color: yellow;
+    text-align: center;
+} */
+
+/* INTERVIEW QUESTIONS
+
+    1. CSS Selectors -> Attribute Selectors ($, ^, *), pseudo selectors (:)
+    2. Box Model -> padding, margin, border
+    Q - If I want multiple box-shadows, can we do that?
+
+    3. Layouts -> Flex-Boxes (1D), Grids (2D)
+    4. Positioning -> static, absolute, relative, fixed, sticky
+
+    5. Trnaformation -> Convert a square into a rhomus -> Convert a square in a ||gm
+    6. transitions -> 2 speeds -> 2s ease-in-out .2s
+    7. @keyframes -> Using transformation, how to create animations
+
+*/

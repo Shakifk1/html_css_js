@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Meta Data of the document -->
+    <head>
+        <meta charset="UTF-8" />
+        <title>My Application</title>
+        <!-- Define Styles in the Head Section - Meta Data to the content -->
+        <!-- INTERNAL CSS -->
+        <!-- selector { property: value } -->
+        <!-- <style>
+            h1 {
+                color: purple;
+            }
+        </style> -->
+    </head>
+
+    <!-- Content of the document -->
+    <body>
+        <!-- Heading Elements -->
+
+        <!-- INLINE STYLES -->
+        <!-- <h1 style="color: red;">Heading One</h1> -->
+        <h1>Heading One</h1>
+        <h1>Heading Two</h1>
+
+        <!-- <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6> -->
+
+        <hr />
+
+        <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b> elit. Adipisci itaque repellat rerum vero, ullam incidunt assumenda deserunt accusantium sit provident totam optio nobis. Itaque, et quisquam mollitia non <u>aspernatur voluptas sit nisi</u>, laudantium ipsam quo, recusandae quaerat placeat aut assumenda? <i>Quasi deleniti</i> illum consequuntur at!</p>
+
+        <!-- Inline Elements -->
+        <!-- <a href="#"> this is an anchor to Google </a> -->
+
+        <!-- Attributes in HTML -->
+        <!-- <a attributeName="valueOfTheAttribute"> this is an anchor to Google</a> -->
+        <!-- <a href="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"> this is an anchor to an Image </a> -->
+
+        <a href="./second.html">click here to go to Second Page</a>
+        <br />
+        <a href="../HTML - 2/third.html">click here to go to Third Page</a>
+
+        <hr />
+
+        <h3>Images - </h3>
+
+        <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="Image - 1" />
+
+        <img src="./assets/img/my_img.jpg" alt="Image - 2" />
+
+        <hr />
+
+        <h3>Lists - </h3>
+
+        <!-- Ordered List (ol) -->
+        <ol type="1">
+            <li>Item - 1</li>
+            <li>Item - 2</li>
+            <li>Item - 3</li>
+            <li>Item - 4</li>
+            <li>Item - 5</li>
+        </ol>
+
+        <!-- Unordered List (ul) -->
+        <ul>
+            <li>Item - 1</li>
+            <li>Item - 2</li>
+            <li>Item - 3</li>
+            <li>Item - 4</li>
+            <li>Item - 5</li>
+        </ul>
+
+        <hr />
+
+        <h3>HTML Forms - </h3>
+        <form>
+            <h3>Sign Up Form</h3>
+            <!-- Name -->
+            <!-- <label> <b>Name :</b> </label> <br> <br> -->
+            <input type="text" placeholder="enter your name..." /> <br> <br>
+            <!-- Email - username@hostmname.com -->
+            <input type="email" placeholder="enter your email..." /> <br> <br>
+            <!-- Password -->
+            <input type="password" placeholder="enter your password..." /> <br> <br>
+            <!-- Date of Birth -->
+            <input type="date" /> <br><br>
+
+            <input type="file" accept=".docx, .pdf" >
+
+            <!-- <button id="btn">CLICK ME</button> -->
+            <input type="submit" value="CLICK ME!!">
+        </form>
+
+        <hr />
+
+        <h3>Tables - </h3>
+        <table border="1">
+            <!-- Table Haed (thead) -->
+            <thead>
+                <th>Emp_ID</th>
+                <th>Emp_Name</th>
+                <th>Emp_Designation</th>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>user_one@company.com</td>
+                    <td>SDE - I</td>
+                </tr>
+
+                <tr>
+                    <td>1002</td>
+                    <td>user_two@company.com</td>
+                    <td>SDE - II</td>
+                </tr>
+
+                <tr>
+                    <td>1003</td>
+                    <td>user_three@company.com</td>
+                    <td>SDE - Intern</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr />
+
+        <h3>Google Maps - </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.573935380455!2d77.05752661569657!3d28.401933982509377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19ca61683403%3A0xe9d8d538e3d9bfef!2sPrepBytes!5e0!3m2!1sen!2sin!4v1663339894446!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <hr />
+        
+        <h3>YouTube Videos - </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bu6bCgfwUf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <hr />
+
+        <h3>Video - </h3>
+        <video src="./assets/video/1. Introduction.mp4" controls ></video>
+
+        <hr />
+
+        <h3>Audio - </h3>
+        <audio src="./assets/audio/Two of us - WRABEL | TEASER SONG | LOVE, VICTOR (320  kbps).mp3" controls></audio>
+
+        <hr>
+        <h3>HTML Entities</h3>
+        <p>&copy;, 2022, PreBytes</p>
+
+        <div style="height: 720px;"></div>
+
+        <!-- <script>
+            document.querySelector('#btn').addEventListener('click', (e) => {
+                e.preventDefault()
+                const name = document.querySelector('#name').value
+                const email = document.querySelector('#email').value
+                const pwd = document.querySelector('#pwd').value
+                const details = [name, email, pwd]
+                console.log(details)
+            })
+        </script> -->
+    </body>
+</html>
